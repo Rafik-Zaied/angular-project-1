@@ -1,0 +1,9 @@
+<main>
+  <h2 *ngIf="networkError">Network Error, couldn't retrieve the data</h2>
+  <h2 *ngIf="loading && networkError === false">Loading...</h2>
+  <div class="company_data" *ngIf="!loading">
+    <h2>{{ companyData.name }}</h2>
+    <p>{{ companyData.description }}</p>
+    <h3>Located in {{ companyData.locations[0].name }}</h3>
+  </div>
+</main>

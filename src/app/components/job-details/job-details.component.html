@@ -1,0 +1,17 @@
+<main class="job_details" *ngIf="jobToDisplay">
+  <h2 class="job_details_title">{{ jobToDisplay.name }}</h2>
+  <h3>{{ jobToDisplay.levels[0].name }}</h3>
+  <p class="job_details_content" [innerHTML]="jobToDisplay.contents"></p>
+  <a href="{{ jobToDisplay.refs.landing_page }}" target="blank">{{
+    jobToDisplay.refs.landing_page
+  }}</a>
+  <h3 class="job_details_date">
+    Published: {{ jobToDisplay.publication_date | date }}
+  </h3>
+  <a
+    class="job_details_company"
+    [routerLink]="['/company', jobToDisplay.company.id]"
+  >
+    <h2>{{ jobToDisplay.company.name }}</h2>
+  </a>
+</main>

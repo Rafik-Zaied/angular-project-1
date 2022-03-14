@@ -1,0 +1,26 @@
+.job_details {
+  padding: 1em 0.8em;
+}
+
+.job_details_title {
+  margin-bottom: 0.5em;
+}
+
+.job_details a:link,
+.job_details a:active {
+  color: #303030;
+}
+
+.job_details a:hover,
+.job_details a:visited {
+  color: blueviolet;
+}
+
+.job_details_date {
+  margin: 1em 0;
+}
+
+.job_details_company {
+  cursor: pointer;
+  text-decoration: none;
+}

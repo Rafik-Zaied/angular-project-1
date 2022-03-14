@@ -1,0 +1,54 @@
+.select {
+  text-align: center;
+  padding: 1.5em 0;
+}
+
+.select_form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.form_select {
+  margin-bottom: 1em;
+  padding: 0.2em;
+  width: 50%;
+  border-radius: 10px;
+  border: 2px solid #303030;
+}
+
+.form_select,
+.form_button {
+  text-align: inherit;
+  font-family: inherit;
+  font-size: inherit;
+}
+
+.form_button {
+  padding: 0.2em 1.2em;
+  border-radius: 10px;
+  border: none;
+  background-color: #303030;
+  color: #fff;
+  transition: transform 500ms;
+}
+
+.form_button:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+}
+
+.jobs_display {
+  padding: 0 0.8em;
+  text-align: left;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  grid-gap: 0.5em;
+  grid-auto-rows: 1fr;
+}
+
+main {
+  text-align: center;
+  padding-top: 1em;
+}

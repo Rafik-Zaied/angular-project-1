@@ -1,0 +1,30 @@
+<section class="select">
+  <div class="select_form">
+    <select
+      (change)="selectChange()"
+      [formControl]="selectField"
+      class="form_select"
+    >
+      <option value="1">Entry Level</option>
+      <option value="2">Mid Level</option>
+      <option value="3">Senior Level</option>
+      <option value="4">Management</option>
+      <option value="5">Internship</option>
+    </select>
+    <input
+      type="button"
+      (click)="onSubmit()"
+      value="Search"
+      class="form_button"
+    />
+  </div>
+</section>
+
+<main>
+  <h2 *ngIf="networkError">Network Error, couldn't retrieve the data</h2>
+  <h2 *ngIf="loading && !jobs.length && networkError === false">Loading...</h2>
+  <h2 *ngIf="!jobs.length && !loading">0 Results</h2>
+  <div class="jobs_display">
+    <app-job-display *ngFor="let job of jobs" [job]="job"></app-job-display>
+  </div>
+</main>

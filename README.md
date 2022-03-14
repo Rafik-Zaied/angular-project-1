@@ -16,4 +16,4 @@ clone the repository, and be sure to run the comand npm install in order to be a
 
 - Rafik Zaied - rafik.zaied96@gmail.com
 - Github - https://github.com/Rafik-Zaied/angular-project-1
-- Website - https://angularproject1.netlify.app/home
+- Website - https://angularproject1.netlify.app

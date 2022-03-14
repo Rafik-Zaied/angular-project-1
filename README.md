@@ -2,6 +2,8 @@
 
 A webapp that displays job advertisements under the Software Engineer category from The muse. The user can choose to see them based on the experience level. They can also see the job and the company details.
 
+clone the repository, and be sure to run the comand npm install in order to be able to run it locally
+
 ## Built With
 
 - Angular

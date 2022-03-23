@@ -12,13 +12,13 @@ export class FetchDataService {
 
   fetchJobs(): Observable<fetchJobsInterface> {
     return this.http.get<fetchJobsInterface>(
-      'https://www.themuse.com/api/public/jobs?category=Software%20Engineer&location=Italy&page=1'
+      'https://www.themuse.com/api/public/jobs?category=Software%20Engineer&page=1'
     );
   }
 
   fetchJobsByLevel(level: string) {
     let url = new URL(
-      `https://www.themuse.com/api/public/jobs?category=Software%20Engineer&level=${level}&page=1&location=Italy`
+      `https://www.themuse.com/api/public/jobs?category=Software%20Engineer&level=${level}&page=1`
     );
     console.log(url.href);
     return this.http.get<fetchJobsInterface>(url.href);
